@@ -7,11 +7,13 @@ import NavBar from "../components/NavBar";
 import Home from "./scenes/Home";
 import Dashboard from "../components/ui/Dashboard"
 import Chat from "./Chat/Chat";
+import Footer from "../components/Footer";
 const App = () => {
   return (
     <>
     {/* <div className="flex h-screen felx-col"> */}
       <Router>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sign-in" element={<SignInPage />} />
@@ -19,6 +21,7 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/chat" element={<Chat />} />
         </Routes>
+        <Footer />
       </Router>
       {/* </div> */}
     </>

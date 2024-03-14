@@ -6,15 +6,12 @@ import Footer from "../../components/Footer";
 const Home = () => {
   return (
     <>
-      <NavBar />
       <div className="flex h-screen felx-col">
       <section className="bg-primary-50 bg-contain py-5 md:py-10">
         <main className="flex-1">
         </main>
       </section>
       </div>
-      <Footer />
-      
     </>
   );
 };
