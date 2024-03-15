@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import NavItems from "./NavItems";
 import MobileNav from "./MobileNav";
 import { Button } from "./ui/button";
-
+import logo from "../src/assets/logo.jpg"
 const NavBar = () => {
   // const navigate = useNavigate();
 
@@ -12,8 +12,9 @@ const NavBar = () => {
     <>
       <header className="w-full border-b">
         <div className="wrapper flex items-center justify-between">
-          <Link to="/" className="w-36">
-            <h1 className="text-3xl">App</h1>
+          <Link href="#" className="flex items-center">
+              <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+              
           </Link>
 
           <SignedIn>
